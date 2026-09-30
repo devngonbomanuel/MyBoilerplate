@@ -1,0 +1,66 @@
+/* --CONTENT: Remove margens, paddings e bordas de todos os elementos--*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* --CONTENT: Garante alinhamento de bloco e tamanho de fonte nativo-- */
+html,
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+/* --CONTENT: Remove marcadores de listas-- */
+ul,
+ol {
+  list-style: none;
+}
+
+/* --CONTENT: Reseta elementos de texto estruturais-- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+span {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --CONTENT: Torna mídias responsivas por padrão-- */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* --CONTENT: Reseta elementos de formulário-- */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  background: transparent;
+  color: inherit;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
